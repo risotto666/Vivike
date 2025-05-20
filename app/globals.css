@@ -1,26 +1,54 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 249, 246, 240;
+  --background-end-rgb: 245, 240, 229;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --primary: 140, 120, 81;
+  --primary-foreground: 255, 255, 255;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --secondary: 230, 220, 198;
+  --secondary-foreground: 140, 120, 81;
+
+  --accent: 245, 240, 229;
+  --accent-foreground: 140, 120, 81;
+
+  --destructive: 239, 68, 68;
+  --destructive-foreground: 255, 255, 255;
+
+  --muted: 230, 220, 198;
+  --muted-foreground: 115, 115, 115;
+
+  --card: 255, 255, 255;
+  --card-foreground: 0, 0, 0;
+
+  --popover: 255, 255, 255;
+  --popover-foreground: 0, 0, 0;
+
+  --border: 230, 220, 198;
+  --input: 230, 220, 198;
+  --ring: 140, 120, 81;
+
+  --radius: 0.5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
