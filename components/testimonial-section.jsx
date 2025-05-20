@@ -32,7 +32,15 @@ export function TestimonialSection() {
       name: "Jessica Williams",
       title: "Operations Manager, Creative Agency",
       avatar: "/vivi.JPG",
-      rating: 4,
+      rating: 5,
+    },
+    {
+      content:
+        "As a small business owner, Vivien's CRM system has been a game-changer for our business. It's easy to use and has saved us a lot of time.",
+      name: "John Doe",
+      title: "CEO, Startup Inc.",
+      avatar: "/vivi.JPG",
+      rating: 5,
     },
   ];
 

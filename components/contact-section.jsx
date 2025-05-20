@@ -15,6 +15,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -83,14 +84,22 @@ export function ContactSection() {
           >
             <Card className="bg-white pt-6 border-[#e6dcc6] overflow-hidden max-w-2xl mx-auto">
               <CardContent className="p-0">
-                <div className="aspect-video w-full bg-[#e6dcc6] relative">
-                  <iframe
+                <div className="aspect-video w-full relative">
+                  {/*   <iframe
                     className="w-full h-full"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.041796518932!2d0.1502352768431421!3d52.242624471989735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d871af122b54d7%3A0xf36b1c24a44d7e86!2s124%20The%20Sycamores%2C%20Milton%2C%20Cambridge%20CB24%206ZH!5e0!3m2!1sen!2suk!4v1747744274634!5m2!1sen!2suk"
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                  ></iframe> */}{" "}
+                  <div className="w-full max-w-[550px] flex mx-auto aspect-square overflow-hidden rounded-2xl shadow-xl bg-white/20 backdrop-blur-sm p-3">
+                    <Image
+                      alt="Work - CRM Specialist"
+                      src="/work.jpg"
+                      fill
+                      className="object-cover object-center opacity-75  rounded-xl"
+                    />
+                  </div>
                 </div>
                 <div className="p-6 space-y-4">
                   {/* Email */}
