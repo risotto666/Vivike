@@ -21,7 +21,7 @@ export function ProjectShowcase() {
       title: "Customer Portal",
       description:
         "Customized client portal with integrated support ticketing system",
-      image: "/projects/unknown-3.jpg",
+      image: "/projects/Unknown-3.jpg",
       tags: ["HubSpot", "Portal", "Support"],
     },
     {
@@ -29,7 +29,7 @@ export function ProjectShowcase() {
       title: "Lead Management System",
       description:
         "Automated lead scoring and nurturing workflow implementation",
-      image: "/projects/unknown-5.jpg",
+      image: "/projects/Unknown-5.jpg",
       tags: ["Zoho CRM", "Automation", "Lead Scoring"],
     },
     {
@@ -37,7 +37,7 @@ export function ProjectShowcase() {
       title: "Email Campaign Manager",
       description:
         "Personalized email marketing campaigns with performance tracking",
-      image: "/projects/unknown-4.jpg",
+      image: "/projects/Unknown-4.jpg",
       tags: ["Marketing", "Email", "Analytics"],
     },
   ];
